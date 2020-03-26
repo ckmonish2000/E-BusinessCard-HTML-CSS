@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background:#ffe;
+}
+.card-wrapper{
+    position: absolute;
+    top:50px;;
+    left: 550px;
+    perspective: 1000px;
+    border-radius: inherit;
+
+}
+
+.card{
+    background:#e60000;
+    width: 200px;
+    height: 350px;
+    transform-style: preserve-3d;
+       position: relative;
+       transition:  1s;
+       box-shadow: 0 15px 60px rgba(0,0,0,.3);
+       border-radius: 15px;
+ 
+}
+
+.logo img{
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.card-front{
+color: white;
+
+
+}
+.name h4{
+    margin-left: 10.5%;
+    margin-top: 15px;
+}
+
+.name p{
+
+    margin-left: 60px;
+    margin-top: 3px;
+}
+
+.number{
+    margin-left: 29px;
+    margin-top: 3px;
+}
+
+.social{
+    display: flex;
+    position: absolute;
+    top:270px;
+    left: -30px;
+    justify-content: center;
+    align-items: center;
+  margin-left: 100px;
+
+
+}
+
+.name img{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.card-front , .card-back{
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: inherit;
+  
+}
+.card-back{
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-wrapper:hover .card{
+    transform: rotateY(180deg);
+}
+
+.card-back img{
+    border-radius: 15px;
+}
